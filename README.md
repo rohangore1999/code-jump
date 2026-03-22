@@ -6,6 +6,31 @@ CodeJump is a VS Code extension that enables instant code navigation through cop
 
 ---
 
+## Installation
+
+### Method 1: Install from VSIX (Recommended for now)
+
+1. **Download the extension**
+   - Go to [Releases](https://github.com/rohangore1999/code-jump/releases)
+   - Download `codejump-navigator-1.2.0.vsix`
+
+2. **Install in VS Code or Cursor**
+   - Open VS Code or Cursor
+   - Go to Extensions (`Cmd+Shift+X` or `Ctrl+Shift+X`)
+   - Click the `...` menu (three dots at top-right)
+   - Select **"Install from VSIX..."**
+   - Choose the downloaded `codejump-navigator-1.2.0.vsix` file
+   - Restart the editor if prompted
+
+3. **Verify installation**
+   - You should see "CodeJump ⚡" in your extensions list
+   - Try the shortcuts: `Cmd+Shift+C` (copy) and `Cmd+Shift+V` (navigate)
+
+### Method 2: VS Code Marketplace (Coming Soon)
+Extension will be available on VS Code Marketplace soon!
+
+---
+
 ## Features
 
 ### 1. Copy Code Reference
