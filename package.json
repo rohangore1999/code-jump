@@ -3,19 +3,19 @@
   "displayName": "CodeJump ⚡",
   "description": "Copy and navigate to code references instantly",
   "version": "1.2.0",
-  "publisher": "Rohan Gore",
+  "publisher": "rohangore1999",
   "author": {
     "name": "Rohan Gore"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/code-jump"
+    "url": "https://github.com/rohangore1999/code-jump"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/code-jump/issues"
+    "url": "https://github.com/rohangore1999/code-jump/issues"
   },
-  "homepage": "https://github.com/yourusername/code-jump#readme",
+  "homepage": "https://github.com/rohangore1999/code-jump#readme",
   "keywords": [
     "navigation",
     "code",
