@@ -1,0 +1,94 @@
+{
+  "name": "code-jump",
+  "displayName": "CodeJump ⚡",
+  "description": "Copy and navigate to code references instantly",
+  "version": "1.2.0",
+  "publisher": "Rohan Gore",
+  "author": {
+    "name": "Rohan Gore"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/code-jump"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/code-jump/issues"
+  },
+  "homepage": "https://github.com/yourusername/code-jump#readme",
+  "keywords": [
+    "navigation",
+    "code",
+    "reference",
+    "jump",
+    "goto",
+    "clipboard",
+    "copy",
+    "link",
+    "productivity"
+  ],
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "icon": "icon.png",
+  "activationEvents": [
+    "onCommand:codeJump.copyReference",
+    "onCommand:codeJump.navigateToReference"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "codeJump.copyReference",
+        "title": "CodeJump: Copy Code Reference"
+      },
+      {
+        "command": "codeJump.navigateToReference",
+        "title": "CodeJump: Navigate to Reference"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "codeJump.copyReference",
+        "key": "cmd+shift+c",
+        "mac": "cmd+shift+c",
+        "win": "ctrl+shift+c",
+        "linux": "ctrl+shift+c",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "codeJump.navigateToReference",
+        "key": "cmd+shift+v",
+        "mac": "cmd+shift+v",
+        "win": "ctrl+shift+v",
+        "linux": "ctrl+shift+v"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "codeJump.copyReference",
+          "when": "editorHasSelection",
+          "group": "9_cutcopypaste"
+        },
+        {
+          "command": "codeJump.navigateToReference",
+          "when": "codeJump.hasValidReference",
+          "group": "9_cutcopypaste"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.60.0",
+    "@types/node": "^14.x",
+    "eslint": "^8.0.0"
+  }
+}
